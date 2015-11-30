@@ -1,0 +1,19 @@
+{
+  "name": "konami-komando",
+  "version": "1.0.0",
+  "description": "A simple JavaScript module that lets you pass a callback after a user has entered the Konami code.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/augbog/konami-komando"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "konami",
+    "gaming"
+  ],
+  "author": "Augustus Yuan <hello@augustusyuan.com>",
+  "license": "MIT"
+}
