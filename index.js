@@ -14,7 +14,7 @@ var konami = function(opts) {
 
   var ran = false;
   var keypresses = [];
-  var KONAMI_CODE = [38, 40, 38, 40, 37, 39, 66, 65];
+  var KONAMI_CODE = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
   document.addEventListener('keydown', function(e) {
     if (opts.once && ran) {
@@ -30,9 +30,9 @@ var konami = function(opts) {
     if (keypresses.length == 0 && key != 38) {
       return;
     // if valid konami code character and keypresses available
-    } else if (keypresses.length < 8 && /37|38|39|40|65|66/.test(key)) {
+    } else if (keypresses.length < 10 && /37|38|39|40|65|66/.test(key)) {
       keypresses.push(key);
-      if (keypresses.length == 8
+      if (keypresses.length == 10
           && JSON.stringify(keypresses) == JSON.stringify(KONAMI_CODE)) {
         opts.callback();
         if (opts.once) {
