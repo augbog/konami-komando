@@ -1,6 +1,6 @@
 {
   "name": "konami-komando",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple JavaScript module that lets you pass a callback after a user has entered the Konami code.",
   "main": "index.js",
   "repository": {
